@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* ================= GLOBAL RESET ================= */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ================= ROOT SETTINGS ================= */
+:root {
+    --primary-color: linear-gradient(309.74deg, #d69601 -1.87%, #fdc901 31.24%, #fdc901 72.5%, #d69601 100%);
+    --secondary-color: #37085a;
+    --hero-overlay: linear-gradient(180deg, rgba(12, 12, 12, 0) 47.85%, #0c0c0c 107.16%);
+    --black-color: #1e1e1e;
+    --white-color: #ffffff;
+    --border-radius: 170px;
+    --padding: clamp(50px, 8vw, 100px);
+    --MB-Heading-Gp: clamp(15px, 2vw, 25px);
+    --MB-Titel-GP: clamp(30px, 4vw, 50px);
+    --MB-Pra-Btn: clamp(20px, 3vw, 35px);
+    --Anton-font: "Anton SC", sans-serif;
+    --Inter-font: "Inter", sans-serif;
+}
+
+/* ================= HEADING SETTINGS ================= */
+body :where(h1) {
+    color: var(--white-color);
+    font-size: clamp(35px, 5vw, 60px);
+    font-family: var(--Anton-font);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+body :where(h2) {
+    color: var(--white-color);
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-family: var(--Anton-font);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+body :where(h3) {
+    color: var(--white-color);
+    font-size: clamp(18px, 1.6vw, 24px);
+    font-family: var(--Anton-font);
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+body :where(h4) {
+    color: var(--white-color);
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-family: var(--Inter-font);
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+
+body :where(h6) {
+    color: var(--white-color);
+    font-size: clamp(10px, 0.8vw, 12px);
+    font-family: var(--Inter-font);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+/* ================= TEXT SETTINGS ================= */
+body :where(p) {
+    color: var(--white-color);
+    font-size: clamp(14px, 1.4vw, 18px);
+    font-family: var(--Inter-font);
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+body :where(span) {
+    color: var(--white-color);
+    font-size: clamp(14px, 1.2vw, 16px);
+    font-family: var(--Inter-font);
+    font-weight: 400;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+body :where(a) {
+    display: inline-block;
+    color: var(--black-color);
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-family: var(--Inter-font);
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+body :where(button) {
+    display: inline-block;
+    color: var(--black-color);
+    font-size: clamp(14px, 1.5vw, 18px);
+    font-family: var(--Inter-font);
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+/* ================= TABLE SETTINGS ================= */
+body :where(th) {
+    color: var(--white-color);
+    font-size: clamp(16px, 1.2vw, 18px);
+    font-family: var(--Inter-font);
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+/* ================= LIST SETTINGS ================= */
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+li>a {
+    color: var(--white-color);
+    font-size: clamp(16px, 1.2vw, 18px);
+    text-transform: capitalize;
+}
+
+article {
+    display: inline-block;
+}
+
+/* ================= CONTAINER SETTINGS ================= */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1140px;
+    }
+}

@@ -1,0 +1,89 @@
+
+.song-popup-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 999999999999999999999;
+    min-height: 100vh;
+    padding: 270px 20px !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.song-popup {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    background: rgba(65, 65, 65, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.popup-close {
+    position: absolute;
+    top: -35px;
+    right: 6px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.song-popup-title {
+    text-align: center;
+    margin-bottom: var(--MB-Heading-Gp);
+}
+
+.song-popup .form-control {
+
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 15px 5px;
+    box-shadow: none;
+}
+
+.song-popup .form-control::placeholder {
+    color: #aaa;
+    opacity: 1;
+}
+
+.song-popup textarea.form-control {
+    resize: none;
+}
+
+.song-submit-btn{
+    border: 0;
+    outline: 0;
+    margin-top: 20px;
+}
+
+.song-popup-overlay {
+    display: none;
+}
+.song-popup-overlay.active {
+    display: flex;
+}
+body.popup-open {
+    overflow: hidden;
+}
+@media (max-width: 375px) {
+    .song-popup {
+        max-width: 100%;
+        padding: 13px;
+    }
+}
